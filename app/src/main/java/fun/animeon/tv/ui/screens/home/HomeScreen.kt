@@ -31,7 +31,9 @@ import androidx.tv.material3.Text
 import fun.animeon.tv.data.model.AnimeItem
 import fun.animeon.tv.ui.components.HeroBanner
 import fun.animeon.tv.ui.components.SwimlaneRow
+import androidx.compose.ui.text.font.FontWeight
 import fun.animeon.tv.ui.theme.BgDark
+import fun.animeon.tv.ui.theme.RedAccent
 import fun.animeon.tv.ui.theme.SurfaceDarkVariant
 import fun.animeon.tv.ui.theme.TextMuted
 import fun.animeon.tv.ui.theme.TextWhite
@@ -72,13 +74,13 @@ fun HomeScreen(
                         text = "AnimeOn",
                         color = TextWhite,
                         fontSize = 24.sp,
-                        fontWeight = androidx.compose.ui.text.font.FontWeight.ExtraBold
+                        fontWeight = FontWeight.ExtraBold
                     )
                     Text(
                         text = " TV",
-                        color = fun.animeon.tv.ui.theme.RedAccent,
+                        color = RedAccent,
                         fontSize = 24.sp,
-                        fontWeight = androidx.compose.ui.text.font.FontWeight.ExtraBold
+                        fontWeight = FontWeight.ExtraBold
                     )
 
                     Spacer(modifier = Modifier.weight(1f))

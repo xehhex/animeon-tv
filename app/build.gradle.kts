@@ -21,8 +21,13 @@ android {
     }
 
     buildTypes {
+        debug {
+            applicationIdSuffix = ".debug"
+            isDebuggable = true
+        }
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("debug")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -58,7 +63,7 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.8.2")
 
     // Jetpack Compose for TV
-    implementation("androidx.tv:tv-foundation:1.0.0-alpha10")
+    implementation("androidx.tv:tv-foundation:1.0.0")
     implementation("androidx.tv:tv-material:1.0.0")
 
     // Compose Navigation & Icons

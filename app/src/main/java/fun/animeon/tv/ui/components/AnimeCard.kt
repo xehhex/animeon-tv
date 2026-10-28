@@ -64,7 +64,7 @@ fun AnimeCard(
             .onFocusChanged { isFocused = it.isFocused },
         shape = CardDefaults.shape(shape = RoundedCornerShape(10.dp)),
         border = CardDefaults.border(
-            focusedBorder = Border(BorderStroke(2.5.dp, FocusGold), shape = RoundedCornerShape(10.dp))
+            focusedBorder = Border(border = BorderStroke(2.5.dp, FocusGold))
         ),
         scale = CardDefaults.scale(focusedScale = 1.0f) // handled custom above
     ) {

@@ -227,7 +227,7 @@ fun EpisodeCard(
             .onFocusChanged { isFocused = it.isFocused },
         shape = CardDefaults.shape(RoundedCornerShape(8.dp)),
         border = CardDefaults.border(
-            focusedBorder = Border(BorderStroke(2.5.dp, FocusGold), RoundedCornerShape(8.dp))
+            focusedBorder = Border(border = BorderStroke(2.5.dp, FocusGold))
         ),
         scale = CardDefaults.scale(focusedScale = 1.0f)
     ) {
