@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AnimeOn TV</string>
+    <string name="home_title">Главная</string>
+    <string name="schedule_title">Расписание онгоингов</string>
+    <string name="popular_title">Популярное</string>
+    <string name="search_hint">Поиск аниме...</string>
+    <string name="episodes_title">Серии</string>
+    <string name="translations_title">Озвучка / Перевод</string>
+    <string name="play_button">Смотреть</string>
+</resources>
